@@ -4,11 +4,10 @@ class Connection {
     private $stmt;
     
     public function __construct(){
-        $servername = "sql301.infinityfree.com";
-		$database = "if0_37559960_smpiscensch_ppdb";
-		$username = "if0_37559960";
-		$password = "DvEPZKYZjrdi";
-		//$password = "*123#IslamicCentre!";
+        $servername = "localhost";
+		$database = "ppdb";
+		$username = "admin";
+		$password = "";
         
         // Create connection
         $this->conn = mysqli_connect($servername, $username, $password, $database);
